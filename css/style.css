@@ -388,19 +388,6 @@ footer nav {
     margin-bottom: 5px;
 }
 
-.fixed-cocial {
-    position: fixed;
-    z-index: 3;
-    right: 0;
-    top: 200px;
-    width: 30px;
-}
-
-.fixed-cocial .social {
-    display: block;
-    margin-left: 0;
-    margin-bottom: 15px;
-}
 .content-flex {
     display: flex;
     justify-content: space-between;
@@ -470,14 +457,17 @@ aside form .btn-search {
     float: left;
     color: #c2c2c2;
 }
-.container-right{
+
+.container-right {
     max-width: 896px;
     margin: auto;
 }
+
 .main-box {
     background-color: #f1f1f1;
     padding-left: 40px;
 }
+
 .video-player {
     position: relative;
     max-width: 896px;
@@ -485,7 +475,8 @@ aside form .btn-search {
     min-height: 345px;
     background-color: black;
 }
-.play-btn{
+
+.play-btn {
     width: 0;
     height: 0;
     position: absolute;
@@ -494,13 +485,35 @@ aside form .btn-search {
     margin-left: -42px;
     margin-top: -42px;
     cursor: pointer;
-    color:white;
+    color: white;
 }
-.play-btn img{
+
+.play-btn img {
     width: 100%;
 }
-.play-btn i{
+
+.play-btn i {
     font-size: 84px;
+    color: white;
+}
+
+.pagination-box {
+    text-align: center;
+    padding: 40px;
+}
+
+.pagination-box ul li {
+    display: inline-block;
+    width: 17px;
+    margin: 0 2px;
+    border-radius: 50%;
+    font-family: 'Now', sans-serif;
+    font-size: 10px;
+    line-height: 17px;
+}
+
+.pagination-box ul li:hover, .pagination-box ul li.active {
+    background: #fa090a;
     color: white;
 }
 
