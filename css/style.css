@@ -401,6 +401,108 @@ footer nav {
     margin-left: 0;
     margin-bottom: 15px;
 }
+.content-flex {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: auto;
+}
+
+aside {
+    background: #000000;
+    max-width: 245px;
+    padding-top: 25px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Metropolis Semi', sans-serif;
+    font-weight: 600;
+}
+
+aside nav ul {
+    margin-bottom: 50px;
+}
+
+aside nav ul li {
+    line-height: 1rem;
+    padding: 0.825rem 1.5rem;
+}
+
+aside nav ul li:hover, aside nav ul li.active {
+    background-color: #ff0000;
+}
+
+aside nav ul li a {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+}
+
+aside nav svg {
+    margin-right: 18px;
+    margin-left: 2px;
+    vertical-align: middle;
+}
+
+aside nav ul li:last-of-type svg {
+    margin-left: 0;
+}
+
+aside nav ul li:nth-of-type(6) svg, aside nav ul li:first-of-type svg {
+    margin-left: 4px;
+}
+
+aside form {
+    background-color: white;
+    float: none;
+    margin: 0 1.5rem;
+}
+
+aside form input::placeholder {
+    text-transform: uppercase;
+    color: black;
+}
+
+aside form input {
+    float: right;
+}
+
+aside form .btn-search {
+    float: left;
+    color: #c2c2c2;
+}
+.container-right{
+    max-width: 896px;
+    margin: auto;
+}
+.main-box {
+    background-color: #f1f1f1;
+    padding-left: 40px;
+}
+.video-player {
+    position: relative;
+    max-width: 896px;
+    margin: 30px auto 30px;
+    min-height: 345px;
+    background-color: black;
+}
+.play-btn{
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -42px;
+    margin-top: -42px;
+    cursor: pointer;
+    color:white;
+}
+.play-btn img{
+    width: 100%;
+}
+.play-btn i{
+    font-size: 84px;
+    color: white;
+}
 
 
 
