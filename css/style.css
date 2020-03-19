@@ -1,0 +1,407 @@
+@font-face {
+    font-family: 'Metropolis';
+    src: url('../fonts/Metropolis-Light.eot');
+    src: url('../fonts/Metropolis-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Metropolis-Light.woff2') format('woff2'),
+    url('../fonts/Metropolis-Light.woff') format('woff'),
+    url('../fonts/Metropolis-Light.ttf') format('truetype'),
+    url('../fonts/Metropolis-Light.svg#Metropolis-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('../fonts/Metropolis-Medium.eot');
+    src: url('../fonts/Metropolis-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Metropolis-Medium.woff2') format('woff2'),
+    url('../fonts/Metropolis-Medium.woff') format('woff'),
+    url('../fonts/Metropolis-Medium.ttf') format('truetype'),
+    url('../fonts/Metropolis-Medium.svg#Metropolis-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metropolis Semi';
+    src: url('../fonts/Metropolis-SemiBold.eot');
+    src: url('../fonts/Metropolis-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Metropolis-SemiBold.woff2') format('woff2'),
+    url('../fonts/Metropolis-SemiBold.woff') format('woff'),
+    url('../fonts/Metropolis-SemiBold.ttf') format('truetype'),
+    url('../fonts/Metropolis-SemiBold.svg#Metropolis-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Now';
+    src: url('../fonts/Now-Bold.eot');
+    src: url('../fonts/Now-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Now-Bold.woff2') format('woff2'),
+    url('../fonts/Now-Bold.woff') format('woff'),
+    url('../fonts/Now-Bold.ttf') format('truetype'),
+    url('../fonts/Now-Bold.svg#Now-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    position: relative;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 18%, rgba(241, 241, 241, 1) 58%, rgba(241, 241, 241, 1) 100%);
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.container:after, header form:after, header nav ul:after, .bg-grey-footer nav:after, aside form:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header {
+    padding-top: 24px;
+    padding-bottom: 19px;
+    background-color: rgba(0, 0, 0, 0.65);
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+header .logo {
+    float: left;
+    margin-bottom: 20px;
+}
+
+header form, aside form {
+    float: right;
+    font-family: 'Metropolis', sans-serif;
+    font-size: 0.95rem;
+    color: #959595;
+    background-color: #ebebeb;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    line-height: 2.6rem;
+    max-width: 208px;
+    margin-top: 9px;
+}
+
+header form input, aside form input {
+    width: 74%;
+    color: #959595;
+    background-color: transparent;
+    border: none;
+    padding: 0 16px;
+    line-height: 2.6rem;
+    float: left;
+    outline: none;
+}
+
+header form input::placeholder {
+    color: #959595;
+    text-transform: uppercase;
+}
+
+.btn-search {
+    color: #fa090a;
+    background: transparent;
+    font-size: 1.5rem;
+    border: none;
+    line-height: 2.6rem;
+    vertical-align: middle;
+    float: right;
+    width: 26%;
+    text-align: center;
+    margin: 0;
+}
+
+header .btn {
+    float: right;
+    margin-top: 9px;
+}
+
+.btn {
+    min-width: 170px;
+    font-family: 'Metropolis', sans-serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    line-height: 2.6rem;
+    text-transform: uppercase;
+    padding: 0 13px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    margin-left: 25px;
+    background-color: #252525;
+    border: none;
+}
+
+.btn-login {
+    background-color: #464646;
+}
+
+.btn-sign-up {
+    background-color: #fa090a;
+}
+
+.btn:before {
+    font-family: "Font Awesome 5 Free";
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    margin-right: 15px;
+}
+
+.btn-store:before {
+    content: "\f07a";
+    font-weight: 900;
+}
+
+.btn-login:before {
+    content: "\f007";
+    font-weight: 400;
+}
+
+.btn-sign-up:before {
+    content: "\f234";
+    font-weight: 600;
+}
+
+.border-top {
+    border-top: 2px solid #454444;
+    padding-top: 16px;
+}
+
+.social {
+    float: right;
+    margin-left: 16px;
+    width: 30px;
+    line-height: 35px;
+    height: 30px;
+    text-align: center;
+    background-color: #fa090a;
+}
+
+.social i {
+    color: black;
+    font-size: 20px;
+}
+
+header nav {
+    float: left;
+    line-height: 30px;
+}
+
+header nav ul {
+    list-style: none;
+    line-height: 30px;
+}
+
+header nav ul li {
+    float: left;
+    margin-right: 18px;
+    line-height: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Bebas Neue', cursive;
+    padding: 0 6px;
+    line-height: 30px;
+    position: relative;
+}
+
+header nav ul li a:after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 4px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background-color: #ff0000;
+    transition: 0.3s;
+}
+
+header nav ul li:first-of-type a {
+    padding-left: 0;
+}
+
+header nav ul li:hover a:after, .img-top img {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3.125rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+h1:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #ff0000;
+    max-width: 1170px;
+    margin: 34px auto 0;
+}
+
+.img-top {
+    width: 100%;
+    position: relative;
+}
+
+.img-top h1 {
+    position: absolute;
+    bottom: 23px;
+    right: 0;
+    left: 0;
+}
+
+footer {
+    background-color: #010006;
+    padding: 78px 0 64px;
+    color: white;
+}
+
+.send-email {
+    max-width: 910px;
+    margin: 0 auto 49px;
+    text-align: center;
+    font-family: 'Metropolis', sans-serif;
+    font-weight: 300;
+}
+
+.send-email label {
+    font-size: 1.1875rem;
+    line-height: 1.6875rem;
+    text-transform: uppercase;
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.send-email input {
+    max-width: 390px;
+    width: 100%;
+    font-family: 'Metropolis', sans-serif;
+    font-weight: 300;
+    color: #959595;
+    background-color: #ebebeb;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    line-height: 3.1875rem;
+    font-size: 1.25rem;
+    border: none;
+    padding: 0 26px;
+}
+
+button.btn.btn-red {
+    background-color: #ff0000;
+    min-width: 311px;
+    line-height: 3.1875rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.bg-grey-footer {
+    background-color: #252525;
+    padding: 60px 0 70px;
+}
+
+.footer-social-box {
+    max-width: 247px;
+    float: left;
+}
+
+.footer-social-box .social {
+    width: 45px;
+    line-height: 45px;
+    height: 45px;
+    margin-left: 22px;
+}
+
+.footer-social-box .social i {
+    font-size: 1.875rem;
+    line-height: 45px;
+}
+
+.footer-social-box .social:last-of-type {
+    margin-left: 0;
+}
+
+.footer-social-box .social:last-of-type i {
+    margin-top: 8px;
+}
+
+.footer-social-box img {
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+footer nav {
+    float: right;
+}
+
+.footer-col {
+    min-width: 182px;
+    margin-left: 27px;
+    float: left;
+}
+
+.footer-col li {
+    font-family: 'Metropolis', sans-serif;
+    font-weight: 500;
+    font-size: 0.88rem;
+    line-height: 2.125rem;
+    margin-bottom: 5px;
+}
+
+.fixed-cocial {
+    position: fixed;
+    z-index: 3;
+    right: 0;
+    top: 200px;
+    width: 30px;
+}
+
+.fixed-cocial .social {
+    display: block;
+    margin-left: 0;
+    margin-bottom: 15px;
+}
+
+
+
+
