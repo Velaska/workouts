@@ -1,0 +1,21 @@
+@media only screen and (max-width: 768px) {
+    .container{
+        padding: 20px;
+    }
+    header .logo {
+        float: none;
+        display: block;
+        max-width: 150px;
+        margin: auto;
+    }
+    header .logo img{
+        width: 100%;
+    }
+
+    header .btn {
+        width: 100%;
+        display: block;
+        margin: 10px auto 0;
+    }
+}
+

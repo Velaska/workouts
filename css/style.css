@@ -280,6 +280,11 @@ h2{
    text-align: left;
     color: #000000;
 }
+h2:before{
+    content: url("../images/icon-weight.png");
+    display: inline-block;
+    margin-right: 30px;
+}
 .img-top {
     width: 100%;
     position: relative;
@@ -522,8 +527,16 @@ aside form .btn-search {
 }
 
 .filter-panel {
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid #898989;
     padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.filter-panel .btn{
+    background-color: #a1a1a1;
+    padding: 15px 19px;
+    margin-left: 18px;
 }
 
 
