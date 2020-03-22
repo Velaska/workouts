@@ -259,7 +259,7 @@ header nav ul li:hover a:after, .img-top img {
     width: 100%;
 }
 
-h1 {
+h1, h2 {
     font-family: 'Bebas Neue', cursive;
     font-size: 3.125rem;
     text-transform: uppercase;
@@ -276,7 +276,10 @@ h1:after {
     max-width: 1170px;
     margin: 34px auto 0;
 }
-
+h2{
+   text-align: left;
+    color: #000000;
+}
 .img-top {
     width: 100%;
     position: relative;
@@ -466,6 +469,7 @@ aside form .btn-search {
 .main-box {
     background-color: #f1f1f1;
     padding-left: 40px;
+    padding-top: 40px;
 }
 
 .video-player {
@@ -515,6 +519,11 @@ aside form .btn-search {
 .pagination-box ul li:hover, .pagination-box ul li.active {
     background: #fa090a;
     color: white;
+}
+
+.filter-panel {
+    border-bottom: 1px solid #555555;
+    padding-bottom: 20px;
 }
 
 
