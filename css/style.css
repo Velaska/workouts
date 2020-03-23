@@ -127,7 +127,9 @@ header .logo {
     float: left;
     margin-bottom: 20px;
 }
-
+header .logo img {
+    width: 100%;
+}
 header form, aside form {
     float: right;
     font-family: 'Metropolis', sans-serif;
@@ -504,6 +506,7 @@ aside form {
     background-color: white;
     float: none;
     margin: 0 1.5rem;
+    min-width: 190px;
 }
 
 aside form input::placeholder {
@@ -535,6 +538,7 @@ aside form .btn-search {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .filter-panel .btn{
     background-color: #a1a1a1;
@@ -548,6 +552,9 @@ aside form .btn-search {
     margin: 35px auto 35px;
     min-height: 345px;
     background-color: black;
+}
+.video-player img{
+    width: 100%;
 }
 
 .play-btn {
@@ -598,12 +605,13 @@ aside form .btn-search {
 }
 .video-title {
     display: flex;
-    border-bottom: 1px solid #555555;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
     text-transform: uppercase;
     color: #363636;
     padding: 20px 0;
-    align-items: center;
+    border-bottom: 1px solid #555555;
 }
 .video-title span{
     color: #555555;

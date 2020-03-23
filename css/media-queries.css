@@ -1,21 +1,283 @@
-@media only screen and (max-width: 768px) {
-    .container{
+@media only screen and (max-width: 1024px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    header {
+        padding: 0;
+        top: -100px;
+        transition: 1s;
+    }
+
+    header:hover {
+        top: 0px;
+    }
+
+    header .container {
         padding: 20px;
     }
+
     header .logo {
-        float: none;
-        display: block;
         max-width: 150px;
-        margin: auto;
+        margin: 15px auto 0;
     }
-    header .logo img{
+
+    header nav ul li {
+        margin-right: 5px;
+    }
+
+    header nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    .content-flex {
+        position: relative;
+    }
+
+    .main-box {
+        padding: 35px 20px;
         width: 100%;
     }
 
-    header .btn {
-        width: 100%;
-        display: block;
-        margin: 10px auto 0;
+    aside {
+        position: fixed;
+        height: 100%;
+        width: 250px;
+        left: -210px;
+        z-index: 1;
+        transition: 1s;
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    aside:hover {
+        left: 0px;
+    }
+
+    aside form {
+        margin: 0 35px;
+        min-width: auto;
+    }
+
+    aside nav ul li {
+        padding: 0.825rem 0.4rem;
+    }
+
+    aside nav ul li a {
+        flex-flow: row-reverse;
+        text-align: right;
+    }
+
+    aside nav svg {
+        margin-left: 18px;
+        margin-right: 2px;
+    }
+
+    aside nav ul li:last-of-type svg {
+        margin-right: 0;
+        margin-left: 18px;
+    }
+
+    aside nav ul li:nth-of-type(6) svg, aside nav ul li:first-of-type svg {
+        margin-right: 4px;
+        margin-left: 18px;
+    }
+
+    .footer-col {
+        min-width: auto;
+    }
+
+    .send-email {
+        padding: 0 20px;
     }
 }
 
+@media only screen and (max-width: 768px) {
+    header .btn {
+        float: right;
+        margin-top: 9px;
+        width: 40px;
+        min-width: 40px;
+        overflow: hidden;
+        height: 40px;
+    }
+
+    .social {
+        float: left;
+        margin-right: 16px;
+        margin-left: 0;
+    }
+
+    button.btn.btn-red {
+        min-width: auto;
+    }
+
+    .footer-social-box {
+        max-width: 100%;
+        overflow: hidden;
+        float: none;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-social-box .logo {
+        max-width: 250px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .footer-social-box img {
+        margin-bottom: 0px;
+    }
+
+    footer nav {
+        float: none;
+        width: 100%;
+        display: block;
+    }
+
+    .footer-social-box .social {
+        margin: 0 5px;
+        float: none;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    h4 {
+        font-size: 1.3rem;
+    }
+
+    .video-title span {
+        font-size: 0.85rem;
+    }
+
+    .img-top {
+        overflow: hidden;
+    }
+
+    .img-top img {
+        width: auto;
+    }
+
+    header nav ul {
+        padding: 0 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav ul li a:after {
+        bottom: -2px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .filter-panel .btn {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        top: -140px;
+    }
+
+    header .container {
+        padding: 10px 0px;
+    }
+
+    header nav {
+        float: none;
+    }
+
+    header .social {
+        margin-top: 15px;
+    }
+
+    .border-top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header .logo {
+        float: none;
+        display: inline-block;
+    }
+
+    header .btn {
+        margin-left: 10px;
+    }
+
+    header form, aside form {
+        float: none;
+        display: block;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .video-player {
+        min-height: 150px;
+    }
+
+    .footer-social-box {
+        padding: 0 30px;
+    }
+
+    .footer-social-box .logo {
+        display: block;
+        margin: 0 auto 20px;
+    }
+
+    .send-email {
+        padding: 0 40px;
+        text-align: center;
+    }
+
+    .send-email input {
+        margin-bottom: 20px;
+    }
+
+    button.btn.btn-red {
+        min-width: 100%;
+        margin: 0;
+    }
+
+    aside {
+        top: 0;
+        padding-top: 120px;
+    }
+
+    .footer-col li {
+        line-height: 1.125rem;
+    }
+
+    .bg-grey-footer {
+        padding: 40px 0 40px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    header {
+        top: -160px;
+    }
+
+    .video-title h4 {
+        width: 100%;
+    }
+
+    h1, h2 {
+        font-size: 2rem;
+    }
+
+    .footer-social-box .social {
+        width: 35px;
+        line-height: 35px;
+        height: 35px;
+    }
+
+    .footer-social-box .social i {
+        font-size: 1.5rem;
+        line-height: 35px;
+    }
+}
