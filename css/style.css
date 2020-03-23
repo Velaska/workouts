@@ -544,6 +544,7 @@ aside form .btn-search {
     background-color: #a1a1a1;
     padding: 15px 19px;
     margin-left: 18px;
+    min-width: auto;
 }
 
 .video-player {
